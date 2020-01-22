@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:rowCount="2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:alpha="1"
+
+                android:gravity="center_horizontal|center_vertical"
+
+                android:onClick="btn1Click"
+                android:orientation="vertical"
+                android:text="Disable/enable btns"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#07524C">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="#00BCD4"
+                android:scaleType="fitEnd"
+                android:src="@drawable/codeworks" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/L3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#B3255E"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:visibility="visible"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/L3_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.25"
+                android:background="#62E42C"
+                android:gravity="bottom"
+
+                android:orientation="vertical"
+                android:visibility="visible"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#00EE150D"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/L4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:alpha="0.5"
+
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0px"
+                    android:layout_marginStart="0px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="0px"
+                    android:layout_marginEnd="0px"
+                    android:layout_marginRight="0px"
+                    android:layout_weight="0.6"
+                    android:background="#3F51B5"
+                    android:onClick="btn2Click"
+                    android:padding="0px"
+                    android:paddingStart="0px"
+                    android:paddingLeft="0px"
+                    android:paddingTop="0px"
+                    android:paddingEnd="0px"
+                    android:paddingRight="0px"
+                    android:paddingBottom="0px"
+                    android:text="Hide img" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0px"
+                    android:layout_marginStart="0px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="0px"
+                    android:layout_marginEnd="0px"
+                    android:layout_marginRight="0px"
+                    android:layout_marginBottom="0px"
+                    android:layout_weight="0.4"
+                    android:background="#FFEB3B"
+                    android:onClick="btn3Click"
+                    android:padding="0px"
+                    android:paddingStart="0px"
+                    android:paddingLeft="0px"
+                    android:paddingTop="0px"
+                    android:paddingEnd="0px"
+                    android:paddingRight="0px"
+                    android:paddingBottom="0px"
+                    android:text="Show img" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
